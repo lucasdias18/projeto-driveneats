@@ -76,5 +76,5 @@ function fecharPedido() {
     - Sobremesa: ${nomeSobremesa}
     Total: R$ ${preçoTotal.toFixed(2).replace('.', ',')}`)
 
-    window.open(`https://wa.me/5535992049912?text=` + pedidoFinal)
+    window.open(`https://wa.me/5521999999999?text=` + pedidoFinal)
 }
