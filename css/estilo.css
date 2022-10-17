@@ -5,12 +5,16 @@ body {
 }
 
 header {
+    width: 100%;
     height: 92px;
+    position: fixed;
+    top: 0;
     background-color: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-left: 21px;
     padding-top: 8px;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 header h1 {
@@ -35,6 +39,7 @@ main {
     padding-left: 19px;
     padding-top: 4px;
     margin-bottom: 108px;
+    margin-top: 92px;
 }
 
 main h1 {
@@ -96,6 +101,21 @@ main h1 {
     margin-bottom: 16px;
 }
 
+ion-icon {
+    color: #32B72F;
+    margin-left: auto;
+    display: none;
+    margin-top: -24px;
+}
+
+.selecionado {
+    border: 5px solid #32B72F;
+}
+
+.selecionado ion-icon {
+    display: initial;
+}
+
 footer {
     width: 100%;
     height: 92px;
@@ -120,4 +140,12 @@ footer button {
     line-height: 23px;
     color: #FFFFFF;
     text-align: center;
+}
+
+footer :nth-child(2) {
+    background-color: #32B72F;
+}
+
+.escondido {
+    display: none;
 }
